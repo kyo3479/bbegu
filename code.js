@@ -7,6 +7,8 @@ function print(){
     console.log(user_id)
     if (good.includes(user_id)){
         document.getElementById("result").innerText = "합격입니다!";
+    }else if(user_id === ""){
+        document.getElementById("result").innerText = ""
     }else{
         document.getElementById("result").innerText = "불합격입니다 아쉽군요.";
     }
